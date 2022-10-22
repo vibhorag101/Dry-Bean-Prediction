@@ -86,3 +86,87 @@ We now do the Multinomial Naïve Bayes using MultinomialNB of sklearn.
 As we observe that the accuracy of Gaussian Naïve Bayes is `0.897` while that of Multinomial Naïve Bayes is `0.788` which is considerably lower. 
 Hence is evident from above that Gaussian Naïve Bayes performs better than Multinomial Naïve Bayes for the given data.
 
+## Part 5
+-	PCA is used to transform high dimensional data to lower dimensional data while trying to retain as much information as possible. It helps us to analyse more complex data with multiple features efficiently.
+-	We make test and train split.
+-	We then make fit_transform() on our train data to normalise the train data and transform() for the test data.
+-	We now do logistic regression using logistic () from sklearn and use the data modified from PCA(n) function from sklearn for n components of PCA.
+
+***The results for the different values of PCA are as follows***
+-	PCA with 4 components
+```
+number of components are 4
+variance is  0.9501988041227669
+Accuracy is  0.8894601542416453
+Precision is  0.8888329430312921
+Recall is  0.8894601542416453
+F1 is  0.8889938558614282
+```
+
+-	PCA with 6 components
+ ```
+ variance is  0.989198643096411
+Accuracy is  0.9243481454278369
+Precision is  0.9248812148305942
+Recall is  0.9243481454278369
+F1 is  0.9243511803525162
+```
+
+-	PCA with 8 components
+ ```
+ variance is  0.9993093340631198
+Accuracy is  0.9280205655526992
+Precision is  0.9286837346038485
+Recall is  0.9280205655526992
+F1 is  0.9280765809256262
+```
+
+-	PCA with 10 components
+ ```
+ variance is  0.9999083425762653
+Accuracy is  0.9280205655526992
+Precision is  0.9286837346038485
+Recall is  0.9280205655526992
+F1 is  0.9280765809256262
+```
+	
+- As we observe on decreasing the PCA components from 12 to 4 the `accuracy and variance decreases` as the amount of information lost on compressing the data increases with higher compression ie. Lower PCA components.
+
+## Part 6
+-	We first do the same process as done above for the PCA
+-	We do it for PCA components = 8
+-	Now we plot the ROC_AUC curve using roc_curve(testY,probY) for getting coordinates corresponding to false and true positive rates,where probY is the probability estimates for the output values and roc_auc_score(testY,probY) for getting the roc_auc Score.
+![image](https://user-images.githubusercontent.com/76804249/197334203-22b51e50-de27-49a3-8fa0-ab8e13a23b34.png)
+- As evident from the results all the models have a roc_auc score greater than 0.9 which demonstrate excellent results and much better than random guess which will give 0.5.
+- We see that the BOMBAY class have the highest roc_auc score while the SIRA class has the smallest roc_auc score.
+
+## Part 7
+-	We repeat the same steps as done in PCA for PCA components = 10
+-	We get the output using logistic.predict() as done in PCA.
+-	Now we get the precision_score, accuracy_score and recall_score.
+
+**The results are as follows :**
+```
+Results of Logistic regression are as follows:
+The model's precision is : 0.929
+The model's recall is : 0.928
+The model's accuracy is : 0.928
+```
+```
+Results of Multinomial Naive Bayes are as follows:
+The model's precision is : 0.788
+The model's recall is : 0.786
+The model's accuracy is : 0.786
+```
+```
+Results of Gaussian Naive Bayes are as follows:
+The model's precision is : 0.897
+The model's recall is : 0.897
+The model's accuracy is : 0.897
+```
+- We find that the accuracy in the case of Logisitic Regression implementation of SKlearn the accuracy is `much better than the Gaussian Naïve Bayes`
+- Accuracy for logistic is 0.931, Gaussian Naïve Bayes is 0.897 and Multinomial Naïve Bayes is 0.786.
+
+## What's Next ❓
+- We can try to implement the various other ML models like SVM etc
+- We can learn more about uses from the paper supplied above and update our models accordingly.

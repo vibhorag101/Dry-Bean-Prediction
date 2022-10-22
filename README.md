@@ -7,5 +7,9 @@ Dry Beans are one of the most consumed edible legumes in the world. Seed quality
 - The motivation for the problem is sourced form the following [ `paper`](https://www.sciencedirect.com/science/article/abs/pii/S0168169919311573?via=ihub). This paper helped me to understand the underlying the scientific basis for this problem.
 
 ### Goals of the Project
-- Performing EDA on the given Dataset to analyse the data better
-- 
+- Performing EDA on the given Dataset to analyse the data better.
+- Using `TSNE` to reduce the dimensions of the data and plot the scatter plot. This will help us to comment on the seperability of the data.
+- Predicting the class using Sklearn's Gaussian and Multinomial Naive Bayes Model.
+- Using PCA for reducing the dimensions of the data and analyse the performance.
+- Plot ROC and AUC for the data using logistic regression of Sklearn.
+- Preict the class using LogisticRegression of Sklearn and compare performance betweeen two Naive Bayes Models.

@@ -49,7 +49,11 @@ We observe that area is directly related to the perimeter and that the BOMBAY cl
 - We now plot a pairplot to given the pairwise correlation between of the columns using 
 sns.pairplot() function. A high positive correlation means that the columns are highly positively related and a high negative correlation means that the columns are highly negatively related. The correlation can take values between [– 1,1] and a low absolute values indicates low correlation.  
 ![image](https://user-images.githubusercontent.com/76804249/197333650-742eee91-497f-46b8-b8f9-f65c0066d9a1.png)
-
+- We also get the number of null values and duplicate values for a better analysis
+```
+The number of duplicated values in the dataset are:  68
+The number of null values in the dataset are:  0
+```
 
 ### **The analysis drawn from the data are**  
 - There are no null values in the dataset and 68 duplicate values.

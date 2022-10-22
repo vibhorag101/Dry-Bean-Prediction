@@ -1,6 +1,7 @@
 ## Dry Bean Class prediction using Machine Learning Techniques.
 ### Motivation to solve the Problem
-Dry Beans are one of the most consumed edible legumes in the world. Seed quality effects the crop production. It is hence essential to classify dry bean seeds for optimal production and max revenue as well as for sustainable farming.
+Dry Beans are one of the most consumed edible legumes in the world. Seed quality affects the crop production and revenue.  
+It is hence essential to classify dry bean seeds for optimal production and max revenue as well as for sustainable farming.
 
 ### Dataset and Publications Used
 - The data is obtained from the following   [`dataset`](https://archive.ics.uci.edu/ml/datasets/Dry+Bean+Dataset).

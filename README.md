@@ -8,6 +8,7 @@ It is hence essential to classify dry bean seeds for optimal production and max 
 - The motivation for the problem is sourced form the following [ `paper`](https://www.sciencedirect.com/science/article/abs/pii/S0168169919311573?via=ihub). This paper helped me to understand the underlying the scientific basis for this problem.
 
 ### Goals of the Project
+This clearly is a `multi class classification problem` where we need to classify a Dry bean seed into one of the six classes from ***Seker, Barbunya, Bombay, Cali, Dermosan, Horoz and Sira.***  
 1. Data Preprocessing
 2. Performing EDA on the given Dataset to analyse the data better.
 3. Using `TSNE` to reduce the dimensions of the data and plot the scatter plot. This will help us to comment on the seperability of the data.

@@ -31,7 +31,7 @@ We then make a histogram and line plot according to the ‘CLASS” column of th
 ### **Analysis from the Data**
 - Most Number of beans have a major axis length of around 250 and minor axis length of around 190.
 - Area of around 42000 is the most common area
--	Most number of beans belong to the class DERMASON and the least number of beans to the class BOMBAY
+- Most number of beans belong to the class DERMASON and the least number of beans to the class BOMBAY
 
 ## Part 2
 - Here we need to perform and Explanatory Data Analysis.
@@ -43,21 +43,21 @@ Now first we plot the histogram for each column. This helps us better visualise 
 We observe that area is directly related to the perimeter and that the BOMBAY class tends to have the highest area and perimeter.  
 ![image](https://user-images.githubusercontent.com/76804249/197333587-22dbab8d-bf16-4fea-a63a-b56dd64ba369.png)
 
--	We now make the Boxplots for Area and perimeter to check for the outliers in the data. We find there are a lot of outliers in the data.  
+- We now make the Boxplots for Area and perimeter to check for the outliers in the data. We find there are a lot of outliers in the data.  
 ![image](https://user-images.githubusercontent.com/76804249/197333616-6aea0422-dc67-44c6-a317-56e3bf7a5370.png)
 
--	We now plot a pairplot to given the pairwise correlation between of the columns using 
+- We now plot a pairplot to given the pairwise correlation between of the columns using 
 sns.pairplot() function. A high positive correlation means that the columns are highly positively related and a high negative correlation means that the columns are highly negatively related. The correlation can take values between [– 1,1] and a low absolute values indicates low correlation.  
 ![image](https://user-images.githubusercontent.com/76804249/197333650-742eee91-497f-46b8-b8f9-f65c0066d9a1.png)
 
 
 ### **The analysis drawn from the data are**  
-•	There are no null values in the dataset.
-•	We can see that the DERMASON is the most abundant class while BOMBAY is the least abundant class  
-•	BOMBAY class has the highest area and perimeter while the DERMASON class the lowest.  
-•	There are many outliers in the area and perimeter in the dataset  
-•	BOMBAY Class has high Major and Minor Axis length and Minor Axis Length.  
-•	ConvexArea and Area have a direct correlation. i.e., As ConvexArea increases the Area increases.  
+- There are no null values in the dataset and 68 duplicate values.
+- We can see that the DERMASON is the most abundant class while BOMBAY is the least abundant class  
+- BOMBAY class has the highest area and perimeter while the DERMASON class the lowest.  
+- There are many outliers in the area and perimeter in the dataset  
+- BOMBAY Class has high Major and Minor Axis length and Minor Axis Length.  
+- ConvexArea and Area have a direct correlation. i.e., As ConvexArea increases the Area increases.  
 
 ## Part 3
 - TCA helps us to analyse high dimensional data. It first measures the similarities in a high n dimensional space and then convert it to JOINT PDF to retain and reflect the probability as accurately as possible.  

@@ -1,5 +1,5 @@
-### Dry Bean Class prediction using Machine Learning Techniques.
-#### Motivation to solve the Problem
+## Dry Bean Class prediction using Machine Learning Techniques.
+### Motivation to solve the Problem
 Dry Beans are one of the most consumed edible legumes in the world. Seed quality effects the crop production. It is hence essential to classify dry bean seeds for optimal production and max revenue as well as for sustainable farming.
 
 ### Dataset and Publications Used
@@ -48,7 +48,7 @@ sns.pairplot() function. A high positive correlation means that the columns are 
 ![image](https://user-images.githubusercontent.com/76804249/197333650-742eee91-497f-46b8-b8f9-f65c0066d9a1.png)
 
 
-**The analysis drawn from the data are**  
+### **The analysis drawn from the data are**  
 •	There are no null values in the dataset.
 •	We can see that the DERMASON is the most abundant class while BOMBAY is the least abundant class  
 •	BOMBAY class has the highest area and perimeter while the DERMASON class the lowest.  
@@ -68,23 +68,34 @@ sns.pairplot() function. A high positive correlation means that the columns are 
 
 ## Part 4
 Firstly, we do Gaussian Naïve Bayes
--	We first make a train test split of the data in 80:20 fashion using train_test_split()  
--	We first need to import modules from the sklearn.   
--	We now need to run Multinomial and Gaussian Naïve Bayes.  
--	We first normalise the data using standard scalar.   
--	We then fit our data in the gaussian imported from sklearn using gaussian.fit(trainX,trainY).  
--	We then get predictedY output using gaussian.predict(testX).  
--	We then calculate the precission score, recall score and accuracy score using precision_score,recall_score, and accuracy_score functions of sklearn.  
+- We first make a train test split of the data in 80:20 fashion using train_test_split()  
+- We first need to import modules from the sklearn.   
+- We now need to run Multinomial and Gaussian Naïve Bayes.  
+- We first normalise the data using standard scalar.   
+- We then fit our data in the gaussian imported from sklearn using gaussian.fit(trainX,trainY).  
+- We then get predictedY output using gaussian.predict(testX).  
+- We then calculate the precission score, recall score and accuracy score using precision_score,recall_score, and accuracy_score functions of sklearn.  
  
-The results obtained using Gaussian Naïve Bayes are as follows:
+***The results obtained using Gaussian Naïve Bayes are as follows :***
+```
+Results of Gaussian Naive Bayes are as follows:
+The model's precision is : 0.897
+The model's recall is : 0.897
+The model's accuracy is : 0.897
+```
+We now do the `Multinomial Naïve Bayes` using `MultinomialNB` of sklearn.
+- We repeat the same steps as Gaussian above but we just use multinomial object from MultinomalNB().
 
-We now do the Multinomial Naïve Bayes using MultinomialNB of sklearn.
--	We repeat the same steps as Gaussian above but we just use multinomial object from MultinomalNB().
-
-***The results obtained are as follows*** 
- 
-As we observe that the accuracy of Gaussian Naïve Bayes is `0.897` while that of Multinomial Naïve Bayes is `0.788` which is considerably lower. 
-Hence is evident from above that Gaussian Naïve Bayes performs better than Multinomial Naïve Bayes for the given data.
+***The results obtained using Multinomial Naive Bayes are as follows :***
+```
+Results of Multinomial Naive Bayes are as follows:
+The model's precision is : 0.788
+The model's recall is : 0.786
+The model's accuracy is : 0.786
+```
+### Analysis of the Results
+- We observe that the accuracy of Gaussian Naïve Bayes is `0.897` while that of Multinomial Naïve Bayes is `0.788`
+- Hence Gaussian Naïve Bayes performs better than Multinomial Naïve Bayes for the given data
 
 ## Part 5
 -	PCA is used to transform high dimensional data to lower dimensional data while trying to retain as much information as possible. It helps us to analyse more complex data with multiple features efficiently.
@@ -92,7 +103,7 @@ Hence is evident from above that Gaussian Naïve Bayes performs better than Mult
 -	We then make fit_transform() on our train data to normalise the train data and transform() for the test data.
 -	We now do logistic regression using logistic () from sklearn and use the data modified from PCA(n) function from sklearn for n components of PCA.
 
-***The results for the different values of PCA are as follows***
+### ***The results for the different values of PCA are as follows***
 -	PCA with 4 components
 ```
 number of components are 4
@@ -145,7 +156,7 @@ F1 is  0.9280765809256262
 -	We get the output using logistic.predict() as done in PCA.
 -	Now we get the precision_score, accuracy_score and recall_score.
 
-**The results are as follows :**
+## **The results are as follows :**
 ```
 Results of Logistic regression are as follows:
 The model's precision is : 0.929

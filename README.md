@@ -16,7 +16,7 @@ Dry Beans are one of the most consumed edible legumes in the world. Seed quality
 7. Preict the class using LogisticRegression of Sklearn and compare performance betweeen two Naive Bayes Models.
 
 ## Methodology and Results Obtained.
-### Part 1.
+## Part 1.
 - Since we are making use of Libraries here, we need to import all the relevant libraries like numpy, matlplotlib, seaborn and pandas.
 We then make a pandas dataframe from the given CSV Dataset file.
 We then make a histogram and line plot according to the ‘CLASS” column of the given dataset.  
@@ -30,7 +30,7 @@ We then make a histogram and line plot according to the ‘CLASS” column of th
 - Area of around 42000 is the most common area
 -	Most number of beans belong to the class DERMASON and the least number of beans to the class BOMBAY
 
-### Part 2
+## Part 2
 - Here we need to perform and Explanatory Data Analysis.
 We use df.info() to get the details about the dataset like number of columns, value types etc and df.describe() to get the details like count, average, maximum and minimum etc for the all the columns. We also use df.shape() to get the number of rows which is 13611 and number of columns which are 17 for our dataset.
 Now first we plot the histogram for each column. This helps us better visualise the frequency of values present in a column.  
@@ -56,7 +56,7 @@ sns.pairplot() function. A high positive correlation means that the columns are 
 •	BOMBAY Class has high Major and Minor Axis length and Minor Axis Length.  
 •	ConvexArea and Area have a direct correlation. i.e., As ConvexArea increases the Area increases.  
 
-### Part 3
+## Part 3
 - TCA helps us to analyse high dimensional data. It first measures the similarities in a high n dimensional space and then convert it to JOINT PDF to retain and reflect the probability as accurately as possible.  
 - The target class is first separated to another variable.  
 - We first fit the data into TSNE using fit_transform().  
@@ -65,4 +65,24 @@ sns.pairplot() function. A high positive correlation means that the columns are 
 
 
 - It is clear from the scatterplot that the data `cannot be separated using a straight line` as there is lot of overlap between different classes.
+
+## Part 4
+Firstly, we do Gaussian Naïve Bayes
+-	We first make a train test split of the data in 80:20 fashion using train_test_split()  
+-	We first need to import modules from the sklearn.   
+-	We now need to run Multinomial and Gaussian Naïve Bayes.  
+-	We first normalise the data using standard scalar.   
+-	We then fit our data in the gaussian imported from sklearn using gaussian.fit(trainX,trainY).  
+-	We then get predictedY output using gaussian.predict(testX).  
+-	We then calculate the precission score, recall score and accuracy score using precision_score,recall_score, and accuracy_score functions of sklearn.  
+ 
+The results obtained using Gaussian Naïve Bayes are as follows:
+
+We now do the Multinomial Naïve Bayes using MultinomialNB of sklearn.
+-	We repeat the same steps as Gaussian above but we just use multinomial object from MultinomalNB().
+
+***The results obtained are as follows*** 
+ 
+As we observe that the accuracy of Gaussian Naïve Bayes is `0.897` while that of Multinomial Naïve Bayes is `0.788` which is considerably lower. 
+Hence is evident from above that Gaussian Naïve Bayes performs better than Multinomial Naïve Bayes for the given data.
 

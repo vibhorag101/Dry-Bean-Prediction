@@ -15,6 +15,9 @@ Dry Beans are one of the most consumed edible legumes in the world. Seed quality
 6. Plot ROC and AUC for the data using logistic regression of Sklearn.
 7. Preict the class using LogisticRegression of Sklearn and compare performance betweeen two Naive Bayes Models.
 
+### File Structure  
+- `Dry-Bean-Predictor.ipynb` -> Jupyter Notebook with ML Model  
+- `Dry_Bean_Dataset.xlsx` -> Dataset
 ## Methodology and Results Obtained.
 ## Part 1.
 - Since we are making use of Libraries here, we need to import all the relevant libraries like numpy, matlplotlib, seaborn and pandas.

@@ -66,7 +66,7 @@ The number of null values in the dataset are:  0
 - ConvexArea and Area have a direct correlation. i.e., As ConvexArea increases the Area increases.  
 
 ## Part 3
-- TCA helps us to analyse high dimensional data. It first measures the similarities in a high n dimensional space and then convert it to JOINT PDF to retain and reflect the probability as accurately as possible.  
+- TSNE helps us to analyse high dimensional data. It first measures the similarities in a high n dimensional space and then convert it to JOINT PDF to retain and reflect the probability as accurately as possible.  
 - The target class is first separated to another variable.  
 - We first fit the data into TSNE using fit_transform().  
 - We now plot the result of the TSNE using a scatterplot  
